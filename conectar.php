@@ -1,0 +1,27 @@
+<?php
+   //define('DB_SERVER', '127.0.0.1');
+   //define('DB_USERNAME', 'root');
+   //define('DB_PASSWORD', '');
+   //define('DB_DATABASE', 'asistencia');
+   $db = mysqli_connect('127.0.0.1','root','','asistencia');
+
+$servername = "127.0.0.1";
+$username = "root";
+$password = "";
+$dbname = "asistencia";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+
+$hostname = "127.0.0.1";
+$username = "root";
+$password = "";
+$databaseName = "asistencia";
+
+$connect = mysqli_connect($hostname, $username, $password, $databaseName);
+?>
